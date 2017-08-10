@@ -16,3 +16,5 @@ revrot("", 8) --> ""
 revrot("123456779", 0) --> ""  
 revrot("563000655734469485", 4) --> "0365065073456944"
 ```
+
+Completed by Harry "Tre" Markley 
