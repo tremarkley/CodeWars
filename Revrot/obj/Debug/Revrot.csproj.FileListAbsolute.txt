@@ -1,0 +1,6 @@
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\bin\Debug\Revrot.exe.config
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\bin\Debug\Revrot.exe
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\bin\Debug\Revrot.pdb
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\obj\Debug\Revrot.csprojResolveAssemblyReference.cache
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\obj\Debug\Revrot.exe
+C:\Users\hmarkley\Source\Repos\Lab 4\CodeWars\Revrot\obj\Debug\Revrot.pdb
