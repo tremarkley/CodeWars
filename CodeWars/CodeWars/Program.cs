@@ -10,6 +10,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+           int[] test = DeleteN.DeleteNth(new int[] { 20, 37, 20, 21 }, 1);
+            Console.ReadLine();
         }
     }
 }
