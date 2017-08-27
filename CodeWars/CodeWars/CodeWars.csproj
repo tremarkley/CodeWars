@@ -44,11 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="camelCase.cs" />
+    <Compile Include="BalancedBrackets.cs" />
     <Compile Include="DeleteN.cs" />
     <Compile Include="Factorial.cs" />
     <Compile Include="GoodvsEvil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecreationOne.cs" />
     <Compile Include="RevRot.cs" />
   </ItemGroup>
   <ItemGroup>

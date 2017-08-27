@@ -10,7 +10,11 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            string test = "".CamelCase();
+            string[] input = new string[3];
+            input[0] = "{[()]}";
+            input[1] = "{[(])}";
+            input[2] = "{(([[(())]]})}{[]}";
+            string test2 = BalancedBrackets.isBalanced(input[2]);
             Console.ReadLine();
         }
     }
