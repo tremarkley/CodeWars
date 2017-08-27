@@ -21,6 +21,7 @@ namespace CodeWars
     */
     class BalancedBrackets
     {
+        //solved recursively
         public static string isBalanced(string s)
         {
             Dictionary<char, char> ClosingBracket = new Dictionary<char, char>()
@@ -112,6 +113,46 @@ namespace CodeWars
             }
 
             return Result;
+        }
+
+        //solved using stack
+        public static string isBalancedStack(string s)
+        {
+            string Result = "NO";
+            Stack<char> Stack = new Stack<char>();
+            Dictionary<char, char> ClosingBracket = new Dictionary<char, char>()
+            {
+                {'{', '}'},
+                {'(', ')'},
+                {'[', ']'}
+            };
+            char[] values = s.ToCharArray();
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (ClosingBracket.ContainsKey(values[i]))
+                {
+                    Stack.Push(ClosingBracket[values[i]]);
+                }
+                //as soon as you encounter a closing bracket check to make sure there is stuff in the stack and that the first value entered into the stack is equal to the closing bracket
+                else if (Stack.Count > 0 && Stack.Pop() == values[i])
+                {
+                     Result = "YES";
+                }
+                else
+                {
+                    return Result = "NO";
+                }
+            }
+            if (Stack.Count == 0)
+            {
+                Result = "YES"; 
+            }
+            else
+            {
+                Result = "NO";
+            }
+            return Result;
+            
         }
     }
 }
