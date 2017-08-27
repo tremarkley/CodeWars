@@ -143,6 +143,7 @@ namespace CodeWars
                     return Result = "NO";
                 }
             }
+            //if at the end there are no items remaining in stack then it is balanced properly.
             if (Stack.Count == 0)
             {
                 Result = "YES"; 
