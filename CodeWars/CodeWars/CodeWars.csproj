@@ -46,6 +46,7 @@
     <Compile Include="camelCase.cs" />
     <Compile Include="BalancedBrackets.cs" />
     <Compile Include="DeleteN.cs" />
+    <Compile Include="Edges.cs" />
     <Compile Include="Factorial.cs" />
     <Compile Include="GoodvsEvil.cs" />
     <Compile Include="Program.cs" />

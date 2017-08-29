@@ -11,32 +11,27 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\hmarkley\Documents\input.txt";
-            string outputpath = @"C:\Users\hmarkley\Documents\RESULTSBALANCED1.txt";
+            string path = @"C:\Users\hmarkley\Documents\Algorithms\Connections.txt";
+            string outputpath = @"C:\Users\hmarkley\Documents\Algorithms\Connections_Output.txt";
 
-            List<string> list = new List<string>();
+            Dictionary<string, List<string>> Connections = new Dictionary<string, List<string>>();
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    list.Add(line); // Add to list.
+                    string[] output = line.Split(' ');
+                    if (!Connections.ContainsKey(output[0]))
+                    {
+                        Connections.Add(output[0], new List<string>() { output[1] });
+                    }
+                    else
+                    {
+                        Connections[output[0]].Add(output[1]);
+                    }
                 }
             }
-            string[] input = new string[3];
-            using (StreamWriter writer =
-            new StreamWriter(outputpath))
-            {
-                foreach (string brackets in list)
-                {
-                    //writer.WriteLine(BalancedBrackets.isBalanced(brackets));
-                    writer.WriteLine(BalancedBrackets.isBalancedStack(brackets));
-                }
-            }
-            input[0] = "{[()]}";
-            input[1] = "{[(])}";
-            input[2] = "{{}(";
-            string test2 = BalancedBrackets.isBalancedStack(input[2]);
+            List<List<string>> testme = CodeWars.Connections.FindConnections(Connections);
             Console.ReadLine();
         }
     }
