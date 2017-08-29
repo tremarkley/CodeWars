@@ -11,7 +11,7 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\hmarkley\Documents\Algorithms\Connections.txt";
+            /*string path = @"C:\Users\hmarkley\Documents\Algorithms\Connections.txt";
             string outputpath = @"C:\Users\hmarkley\Documents\Algorithms\Connections_Output.txt";
 
             Dictionary<string, List<string>> Connections = new Dictionary<string, List<string>>();
@@ -31,7 +31,9 @@ namespace CodeWars
                     }
                 }
             }
-            List<List<string>> testme = CodeWars.Connections.FindConnections(Connections);
+            List<List<string>> testme = CodeWars.Connections.FindConnections(Connections);*/
+
+            TwoNumbers TwoNumbers = new TwoNumbers();
             Console.ReadLine();
         }
     }
