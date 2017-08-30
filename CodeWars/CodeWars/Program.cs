@@ -32,8 +32,7 @@ namespace CodeWars
                 }
             }
             List<List<string>> testme = CodeWars.Connections.FindConnections(Connections);*/
-
-            TwoNumbers TwoNumbers = new TwoNumbers();
+            ReverseNumber.Reverse(-123);
             Console.ReadLine();
         }
     }
